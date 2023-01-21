@@ -1,0 +1,214 @@
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url(/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf)
+    format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Plus Jakarta Sans';
+  font-size: 16px;
+}
+
+body {
+  background-color: hsl(210, 60%, 98%);
+}
+
+.notifications-container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notifications {
+  padding: 2rem;
+  background-color: hsl(0, 0%, 100%);
+  max-width: 55vw;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.notif-function {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.notification-info {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.notification-link {
+  text-decoration: none;
+  font-weight: 500;
+  color: hsl(219, 14%, 63%);
+}
+
+.notification-count {
+  background-color: hsl(219, 85%, 26%);
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.4rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.notification {
+  display: flex;
+  gap: 0.9rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+.notification-container {
+  display: flex;
+  gap: 0.1rem;
+  align-items: center;
+}
+
+.unread {
+  background: hsl(211, 68%, 94%);
+}
+
+.notif-img {
+  width: 3rem;
+  align-self: flex-start;
+}
+
+.notif-text {
+  font-size: 1rem;
+  color: hsl(219, 14%, 63%);
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.notif-name {
+  color: hsl(224, 21%, 14%);
+}
+
+.notif-important {
+  color: hsl(219, 12%, 42%);
+}
+
+.notif-time {
+  font-weight: 600;
+  color: hsl(219, 12%, 42%);
+}
+
+.notif-info-text {
+  padding: 1.5rem;
+  border: 0.1rem solid hsl(205, 33%, 90%);
+  margin-top: 1.4rem;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: hsl(219, 14%, 63%);
+  border-radius: 0.5rem;
+}
+
+.notif-img--special {
+  margin-left: auto;
+  width: 3rem;
+}
+
+.red-dot::before {
+  content: '';
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: hsl(1, 90%, 64%);
+  margin-right: 0.5rem;
+}
+
+.blue-notif {
+  color: hsl(219, 85%, 26%);
+}
+
+@media (max-width: 64rem) {
+  .notifications {
+    max-width: 77vw;
+  }
+}
+
+@media (max-width: 48rem) {
+  .notifications {
+    max-width: 88vw;
+  }
+
+  .notif-img--special {
+    margin-left: auto;
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .notifications {
+    max-width: 91vw;
+  }
+
+  .notif-img--special {
+    margin-left: auto;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .notif-text {
+    font-size: 0.8rem;
+  }
+
+  .notif-info-text {
+    font-size: 0.7rem;
+  }
+
+  .notif-time {
+    font-size: 0.7rem;
+  }
+
+  .notification-link {
+    font-size: 0.8rem;
+  }
+  .notification-info {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 23.438rem) {
+  .notifications {
+    max-width: 92vw;
+  }
+
+  .notification-link {
+    font-size: 0.7rem;
+  }
+
+  .notification-info {
+    font-size: 0.7rem;
+  }
+
+  .notification-count {
+    font-size: 0.7rem;
+  }
+
+  .notif-text {
+    font-size: 0.7rem;
+  }
+  .notif-time {
+    font-size: 0.7rem;
+  }
+
+  .notif-info-text {
+    font-size: 0.7rem;
+    padding: 1rem;
+    line-height: 1.1rem;
+  }
+}
